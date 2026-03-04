@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.sidebar h1 {
+    color: white;
+}
+
+li {
+    list-style: none;
+    gap: 10px;
+}
+
+.communities {
+    padding-bottom: 40px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar content";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #096bcd;
+    color: white;
+}
+
+.right-wrapper {
+    display: grid;
+    grid-area: content;
+    grid-template-columns: auto 1fr;
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.header {
+    grid-area: header;
+    background-color: white;
+}
+
+.projects-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+
+    background-color: lightgray;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-secondary {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    gap: 20px;
+}
+
+
+
+
+
